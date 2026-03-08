@@ -1,15 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/MAHLbHoJ)
-# Université Côte d'Azur - DS4H - 
-# MASTER MIAGE NUMRES
-## Cours de Programmation Mobile Moderne - Leo Donati
-### TD2 : Première application Android en suivant les principes du MAD
-
-#### Instructions
-
-Suivre le **live coding** du prof ou bien les [slides](https://docs.google.com/presentation/d/1YM7QK69b26d_szoUPjoasBvn20w3H7J2KJF3LO9cmBI/edit?usp=drive_link).
-
----
-
 ## TD3 : Application Kotlin Multiplateforme (KMP)
 
 ### Objectif
@@ -65,7 +53,7 @@ Faire évoluer PizzApp (TD2) en application multiplateforme pour :
 	  - `WebLocalStorageOrdersRepository` (localStorage navigateur)
 
 ### Démo vidéo
-- Lien vidéo (YouTube ou autre) : _à compléter_
+- Lien vidéo (YouTube) : (https://youtu.be/rbQUNSVh0lg)
 - La vidéo montre :
 	- le lancement Android
 	- le lancement Desktop
