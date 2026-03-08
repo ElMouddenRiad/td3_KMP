@@ -1,0 +1,47 @@
+CREATE TABLE orders (
+  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  date INTEGER NOT NULL,
+  total_price REAL NOT NULL
+);
+
+CREATE TABLE order_items (
+  id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  order_id INTEGER NOT NULL REFERENCES orders(id) ON DELETE CASCADE,
+  pizza_id INTEGER NOT NULL,
+  pizza_name TEXT NOT NULL,
+  base_price REAL NOT NULL,
+  extra_cheese INTEGER NOT NULL,
+  quantity INTEGER NOT NULL
+);
+
+selectOrderHistory:
+SELECT
+  o.id,
+  o.date,
+  o.total_price,
+  i.pizza_id,
+  i.pizza_name,
+  i.base_price,
+  i.extra_cheese,
+  i.quantity
+FROM orders o
+LEFT JOIN order_items i ON i.order_id = o.id
+ORDER BY o.date DESC, i.id ASC;
+
+insertOrder:
+INSERT INTO orders(date, total_price)
+VALUES (?, ?);
+
+lastInsertRowId:
+SELECT last_insert_rowid();
+
+insertOrderItem:
+INSERT INTO order_items(
+  order_id,
+  pizza_id,
+  pizza_name,
+  base_price,
+  extra_cheese,
+  quantity
+)
+VALUES (?, ?, ?, ?, ?, ?);

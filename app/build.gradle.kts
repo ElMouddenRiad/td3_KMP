@@ -45,6 +45,7 @@ kapt {
 dependencies {
 
     implementation(project(":shared"))
+    implementation(project(":persistence"))
 
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
@@ -61,6 +62,7 @@ dependencies {
 
     implementation("androidx.navigation:navigation-compose:2.9.6")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
+    implementation("app.cash.sqldelight:android-driver:2.0.2")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

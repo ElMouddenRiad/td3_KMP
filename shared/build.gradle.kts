@@ -25,6 +25,10 @@ kotlin {
                 implementation(compose.materialIconsExtended)
             }
         }
+        val androidMain by getting {
+        }
+        val desktopMain by getting {
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
