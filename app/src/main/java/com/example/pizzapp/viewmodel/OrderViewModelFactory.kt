@@ -10,7 +10,7 @@ class OrderViewModelFactory(
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(OrderViewModel::class.java)) {
-            return requireNotNull(modelClass.cast(OrderViewModel(repository)))
+            return OrderViewModel(repository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
