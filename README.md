@@ -11,8 +11,7 @@ Faire évoluer PizzApp (TD2) en application multiplateforme pour :
 - Desktop (Windows / macOS / Linux)
 
 ### Auteur
-- Étudiant : Riad El Moudden
-- Travail réalisé en individuel (pas de binôme)
+- Étudiants : Riad El Moudden - Anas Tribak
 
 ### État d'avancement TD3
 - [x] Module shared KMP créé
