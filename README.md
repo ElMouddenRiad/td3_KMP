@@ -10,7 +10,7 @@ Faire évoluer PizzApp (TD2) en application multiplateforme pour :
 - Étudiant : Riad El Moudden
 - Travail réalisé en individuel (pas de binôme)
 
-### État d'avancement TD3
+### État d'avancement TD3 version 2
 - [x] Module shared KMP créé
 - [x] Cible Android branchée sur le code partagé
 - [x] Cible Desktop opérationnelle
