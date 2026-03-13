@@ -28,10 +28,6 @@ Faire évoluer PizzApp (TD2) en application multiplateforme pour :
 - La logique métier est partagée dans `shared` (`OrderService`, panier, calcul du total, historique).
 - Le contrat de persistance est partagé via `OrdersRepository`.
 - La persistance SQLDelight est isolée dans le module `persistence` (Android/Desktop) pour éviter les conflits de dépendances avec la cible `wasmJs`.
-- Cible de persistance unifiée:
-  - Option recommandée: `SQLDelight` (schéma SQL + drivers multiplateformes)
-  - Option alternative: `Realm Kotlin` (si compatibilité plateforme confirmée)
-  - Contrainte importante: pour `wasmJs`, vérifier le driver/dispositif de stockage disponible avant validation finale.
 
 - État actuel implémenté:
 	- Android: `SqlDelightOrdersRepository` via module `persistence` (base SQLite `pizzapp.db`)
@@ -72,7 +68,7 @@ flowchart LR
 ```
 
 ### Validation TD3 version 2
-- Le projet correspond à l'objectif "même application multi-plateforme" au niveau fonctionnalités et parcours utilisateur.
+- Le projet correspond à l'objectif "application multi-plateforme" au niveau fonctionnalités et parcours utilisateur.
 - L'UI et la logique métier sont partagées entre Android/Desktop/Web via Compose Multiplatform + `shared`.
 - La persistance est déjà unifiée via SQLDelight sur Android/Desktop; le point restant est l'alignement Web (`wasmJs`).
 - La persistance est unifiée via SQLDelight sur Android/Desktop, et stabilisée sur Web via fallback `localStorage` compatible `wasmJs`.
