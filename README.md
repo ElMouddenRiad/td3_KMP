@@ -101,6 +101,8 @@ flowchart LR
 
 ### Démo vidéo
 - Lien vidéo (YouTube) : (https://youtu.be/Lhj80FlLFCo)
+- Lien du repo de la version 1 : https://github.com/UniCA-DS4H-MIAGE-NUMRES/td3-2025-riad?tab=readme-ov-file
+- Lien vidéo version 1 : (https://youtu.be/rbQUNSVh0lg)
 - La vidéo montre :
 	- le lancement Android
 	- le lancement Desktop
